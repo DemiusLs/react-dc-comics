@@ -58,7 +58,8 @@ function Footer() {
 
                 </ul>
 
-                <div className={style.wrapper}> </div>
+                
+                    <img className={style.image} src="../img/dc-logo-bg.png" alt="" />
 
 
 

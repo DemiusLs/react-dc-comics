@@ -7,11 +7,14 @@
 
 .container {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
     padding-top: 10px;
     display: flex;
 
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -34,14 +37,20 @@
         text-decoration: none;
         color: #63676b;
         font-size: 0.7rem;
-        position: relative;
 
+
+    }
+    a:hover{
+        color: #ffffff;
     }
 
 
 }
 
-img {
+.image {
     
-    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: -20%;
+    
 }
