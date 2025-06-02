@@ -1,0 +1,47 @@
+.footer {
+
+    background-image: url("../img/footer-bg.jpg");
+    height: 400px;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+.col {
+    margin: 0;
+}
+
+.list {
+    max-width: 100%;
+    padding: 20px;
+    list-style: none;
+
+    h2 {
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    a {
+
+        text-decoration: none;
+        color: #63676b;
+        font-size: 0.7rem;
+        position: relative;
+
+    }
+
+
+}
+
+img {
+    
+    max-width: 100%;
+}

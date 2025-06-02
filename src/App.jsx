@@ -3,6 +3,7 @@ import './App.css'
 import Header from '../components/header.jsx'
 import Main from '../components/main.jsx'
 import BlueBanner from '../components/bluebanner.jsx'
+import Footer from '../components/footer.jsx'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Main />
       <BlueBanner />
+      <Footer/>
 
     </>
   )
