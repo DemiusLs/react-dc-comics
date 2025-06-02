@@ -1,0 +1,49 @@
+.banner {
+    background-color: #303030;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.btnfoot {
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #0282F9;
+    padding: 5px 10px;
+}
+
+.list {
+
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    justify-content: space-between;
+
+    h2 {
+        text-transform: uppercase;
+        color: #0282F9;
+        margin-right: 20px;
+        font-size: 0.9rem;
+        align-self: center;
+    }
+
+    a {
+        img {
+
+            display: block;
+
+        }
+    }
+
+    a:active {
+        color: red;
+    }
+}
