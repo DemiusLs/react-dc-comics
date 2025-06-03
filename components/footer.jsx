@@ -3,6 +3,121 @@ import style from "./footer.module.css"
 
 function Footer() {
 
+    const arr = [{
+        list: "dc-comix",
+        elements: [
+            {
+                text: "Characters",
+                link: "/Characters",
+            },
+            {
+                text: "Comics",
+                link: "/Comics",
+            },
+            {
+                text: "Movies",
+                link: "/Movies",
+            },
+            {
+                text: "TV",
+                link: "/TV",
+            },
+            {
+                text: "Games",
+                link: "/Games",
+            },
+            {
+                text: "Video",
+                link: "/Video",
+            }, {
+                text: "News",
+                link: "/News",
+            },
+        ]
+    },
+    {
+        list: "shop",
+        elements: [{
+            text: "Shop DC",
+            link: "/Shop-DC",
+        },
+        {
+            text: "Shop DC Collectibles",
+            link: "/Shop-DC-Collectibles",
+        }]
+
+    },
+
+    ]
+
+    const arr2 = [{
+        list: "DC",
+        elements: [{
+            text: "Term Of Use",
+            link: "/Terms_Of_Use",
+        },
+        {
+            text: "Privacy policy(New)",
+            link: "/Privacy_policy",
+        },
+        {
+            text: "Ad Choices",
+            link: "/Ad_Choices",
+        },
+        {
+            text: "Advertising",
+            link: "/Advertising",
+        },
+        {
+            text: "Jobs",
+            link: "/Jobs",
+        },
+        {
+            text: "Subscriptions",
+            link: "/Subscriptions",
+        },
+        {
+            text: "Talent Workshops",
+            link: "/Talent Workshops",
+        }, {
+            text: "CPSC Certificates",
+            link: "/CPSC_Certificates",
+        }, {
+            text: "Ratings",
+            link: "/Ratings",
+        }, {
+            text: "Shop Help",
+            link: "/Shop_Help",
+        }, {
+            text: "Contact US",
+            link: "/Contact_US",
+        },]
+    },
+    {
+        list: "sites",
+        elements: [{
+            text: "DC",
+            link: "/DC",
+        },
+        {
+            text: "MAD Magazine",
+            link: "/MAD_Magazine",
+        },
+        {
+            text: "DC Kids",
+            link: "/DC_Kids",
+        },
+        {
+            text: "DC Universe",
+            link: "/DC_Universe",
+        },
+        {
+            text: "DC Power Visa",
+            link: "/DC_Power_Visa",
+        }]
+
+    },]
+
     return (
 
         <footer className={style.footer}>
@@ -11,55 +126,41 @@ function Footer() {
             <div className={style.container}>
 
                 <div className={style.col}>
-                    <ul className={style.list}>
-                        <h2>dc comics</h2>
-                        <li><a href="">Characters</a> </li>
-                        <li><a href="">Comics</a></li>
-                        <li><a href="">Movies</a></li>
-                        <li><a href="">TV</a></li>
-                        <li><a href="">Games</a></li>
-                        <li><a href="">Video</a></li>
-                        <li><a href="">News</a></li>
-                    </ul>
 
-                    <ul className={style.list}>
-                        <h2>shop</h2>
-                        <li><a href="">Shop DC</a> </li>
-                        <li><a href="">Shop DC Collectibles</a></li>
-                    </ul>
+                    {arr.map((curList, index) => (
+
+                        <ul key={`list-${index}`} className={style.list}>
+                            <h2>{curList.list}</h2>
+
+                            {curList.elements.map((curEl, index2) => (
+                                <li key={`${curList.list}-${index2}`}><a href={curEl.link}>{curEl.text}</a> </li>
+
+                            ))}
+                        </ul>
+                    ))}
+
+
+
+
+
                 </div>
 
+                {arr2.map((curList, index) => (
+
+                    <ul key={`list-${index}`} className={style.list}>
+                        <h2>{curList.list}</h2>
+
+                        {curList.elements.map((curEl, index2) => (
+                            <li key={`${curList.list}-${index2}`}><a href={curEl.link}>{curEl.text}</a> </li>
+
+                        ))}
+                    </ul>
+                ))}
 
 
 
-                <ul className={style.list}>
-                    <h2>dc</h2>
-                    <li><a href="">Terms Of Use</a> </li>
-                    <li><a href="">Privacy policy(New)</a></li>
-                    <li><a href="">Ad Choices</a></li>
-                    <li><a href="">Advertising</a></li>
-                    <li><a href="">Jobs</a></li>
-                    <li><a href="">Subscriptions</a></li>
-                    <li><a href="">Talent Workshops</a></li>
-                    <li><a href="">CPSC Certificates</a></li>
-                    <li><a href="">Ratings</a></li>
-                    <li><a href="">Shop Help</a></li>
-                    <li><a href="">Contact US</a></li>
-                </ul>
 
-
-                <ul className={style.list}>
-                    <h2>sites</h2>
-                    <li><a href="">DC</a> </li>
-                    <li><a href="">MAD Magazine</a></li>
-                    <li><a href="">DC Kids</a></li>
-                    <li><a href="">DC Universe</a></li>
-                    <li><a href="">DC Power Visa</a></li>
-
-                </ul>
-
-                
-                    <img className={style.image} src="../img/dc-logo-bg.png" alt="" />
+                <img className={style.image} src="../img/dc-logo-bg.png" alt="" />
 
 
 

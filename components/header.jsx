@@ -63,12 +63,12 @@ function Header() {
     return (
 
         <header className={style.header}>
-            <div className={`container + ${style.inner}`}>
+            <div className={`container  ${style.inner}`}>
                 <img className={style.logo} src={logo.path} alt={logo.alt} />
 
                 <ul className={style.list}>
                     {arr.map((curEl, index) => (
-                        <li><a key={`head-list ${index}`} href={curEl.url} >{curEl.text} <div className={curEl.active ? style.active : ""}></div></a></li>
+                        <li key={`head-list ${index}`}><a href={curEl.url} >{curEl.text} <div className={curEl.active ? style.active : ""}></div></a></li>
                     ))}
 
                 </ul>
