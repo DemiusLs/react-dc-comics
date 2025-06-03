@@ -1,0 +1,9 @@
+.heroBanner {
+
+    height: 300px;
+    overflow: hidden;
+
+    img {
+       width: 100%;
+    }
+}
