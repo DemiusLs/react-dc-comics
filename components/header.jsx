@@ -1,6 +1,53 @@
 import style from "./header.module.css"
 
-const arr =["characters", "comics", "movies" ,"tv", "games" ,"collectibles", "video" ,"fans" , "news" , "shop"]
+const arr =[
+    {
+        text:"characters",
+        url: "/",
+        active : false
+    },
+    {
+        text:"movies",
+        url: "/movies",
+        active : false
+    },
+    {
+        text:"tv",
+        url: "/tv",
+        active : false
+    },
+    {
+        text:"games",
+        url: "/games",
+        active : false
+    },
+    {
+        text:"collectibles",
+        url: "/collectibles",
+        active : false
+    },
+    {
+        text:"video",
+        url: "/video",
+        active : false
+    },
+    {
+        text:"fans",
+        url: "/fans",
+        active : false
+    },
+    {
+        text:"news",
+        url: "/news",
+        active : false
+    },
+     {
+        text:"shop",
+        url: "/shop",
+        active : false
+    },
+]
+
 
 function Header() {
 
@@ -9,25 +56,21 @@ function Header() {
         alt: "logo DC "
     }
 
+    
+
 
 
     return (
 
         <header className={style.header}>
-            <div className={style.container}>
+            <div className={`container + ${style.inner}`}>
                 <img className={style.logo} src={logo.path} alt={logo.alt} />
 
                 <ul className={style.list}>
-                    <li><a href="">characters <div className={style.active}></div></a> </li>
-                    <li><a href="">comics</a></li>
-                    <li><a href="">movies</a></li>
-                    <li><a href="">tv</a></li>
-                    <li><a href="">games</a></li>
-                    <li><a href="">collectibles</a></li>
-                    <li><a href="">video</a></li>
-                    <li><a href="">fans</a></li>
-                    <li><a href="">news</a></li>
-                    <li><a href="">shop</a></li>
+                    {arr.map((curEl, index) => (
+                        <li><a key={`head-list ${index}`} href={curEl.url}>{curEl.text}</a></li>
+                    ))}
+                   
                 </ul>
             </div>
 
