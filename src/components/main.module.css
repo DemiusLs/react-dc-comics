@@ -12,18 +12,19 @@
     width: calc(100% / 7);
     text-align: center;
     overflow: hidden;
+    height: 240px;
 
 
-    img{
-        height: 240px;
-        width: calc(100vw / 7);
+    img {
+        height: 80%;
+        width: 300px;
         object-fit: cover;
 
     }
-    
+
 
     p {
-        
+        height: 20%;
         display: block;
 
     }
