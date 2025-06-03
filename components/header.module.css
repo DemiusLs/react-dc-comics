@@ -30,7 +30,7 @@
     display: flex;
     gap: 1.5vw;
 
-
+    
 
     a {
 
@@ -40,6 +40,7 @@
         font-size: 0.8rem;
         font-weight: 700;
         position: relative;
+        
         padding: 50px 0;
 
 

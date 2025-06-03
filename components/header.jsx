@@ -1,50 +1,50 @@
 import style from "./header.module.css"
 
-const arr =[
+const arr = [
     {
-        text:"characters",
+        text: "characters",
         url: "/",
-        active : false
+        active: true
     },
     {
-        text:"movies",
+        text: "movies",
         url: "/movies",
-        active : false
+        active: false
     },
     {
-        text:"tv",
+        text: "tv",
         url: "/tv",
-        active : false
+        active: false
     },
     {
-        text:"games",
+        text: "games",
         url: "/games",
-        active : false
+        active: false
     },
     {
-        text:"collectibles",
+        text: "collectibles",
         url: "/collectibles",
-        active : false
+        active: false
     },
     {
-        text:"video",
+        text: "video",
         url: "/video",
-        active : false
+        active: false
     },
     {
-        text:"fans",
+        text: "fans",
         url: "/fans",
-        active : false
+        active: false
     },
     {
-        text:"news",
+        text: "news",
         url: "/news",
-        active : false
+        active: false
     },
-     {
-        text:"shop",
+    {
+        text: "shop",
         url: "/shop",
-        active : false
+        active: false
     },
 ]
 
@@ -56,7 +56,7 @@ function Header() {
         alt: "logo DC "
     }
 
-    
+
 
 
 
@@ -68,9 +68,9 @@ function Header() {
 
                 <ul className={style.list}>
                     {arr.map((curEl, index) => (
-                        <li><a key={`head-list ${index}`} href={curEl.url}>{curEl.text}</a></li>
+                        <li><a key={`head-list ${index}`} href={curEl.url} >{curEl.text} <div className={curEl.active ? style.active : ""}></div></a></li>
                     ))}
-                   
+
                 </ul>
             </div>
 
