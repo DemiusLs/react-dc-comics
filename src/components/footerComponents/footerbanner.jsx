@@ -5,7 +5,7 @@ function FooterBanner() {
 
         <div className={style.banner}>
 
-            <div className={style.container}>
+            <div className={`${style.inner}  container`}>
 
                 <a className={style.btnfoot} href="">sign-up now!</a>
 

@@ -10,7 +10,7 @@ function Footer() {
         <footer className={style.footer}>
 
 
-            <div className={style.container}>
+            <div className={`${style.inner}  container`}>
 
                 <div className={style.col}>
 

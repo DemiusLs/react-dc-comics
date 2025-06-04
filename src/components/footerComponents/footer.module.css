@@ -2,19 +2,16 @@
 
     background-image: url("/img/dc-logo-bg.png"), url("/img/footer-bg.jpg");
     background-repeat: no-repeat;
-    background-position:  right , center;
-    background-size: 30% , cover;
+    background-position:   85% , center;
+    background-size: 400px , cover;
     
 
 }
 
-.container {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
+.inner{
+    
     padding-top: 10px;
     display: flex;
-
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
@@ -35,13 +32,9 @@
         text-transform: uppercase;
     }
 
-    a {
-
-        text-decoration: none;
+    a {        
         color: #63676b;
         font-size: 0.7rem;
-
-
     }
     a:hover{
         color: #ffffff;

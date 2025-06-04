@@ -1,23 +1,14 @@
-import style from "./main.module.css"
-import comics from "../../data/comics";
+import style from "./appmain.module.css"
 import CardComponent from "./CardComponent";
 
 
-function AppMain() {
-
-
-    const data = [...comics]
-
-
-
-
-
+function AppMain({ comics }) {
     return (
 
         <main className={style.main}>
             <div className={`${style.inner}  container`}>
-                {data.map(comic => (
-                    <CardComponent id={comic.id} thumb={comic.thumb} series={comic.series} style={style} />
+                {comics.map(comic => (
+                    <CardComponent key={`comic-${comic.id}`} thumb={comic.thumb} series={comic.series} style={style} />
 
                 ))}
 

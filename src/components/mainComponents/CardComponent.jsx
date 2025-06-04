@@ -1,8 +1,8 @@
-const CardComponent = ({id, thumb , series , style}) => {
+const CardComponent = ({ thumb , series , style}) => {
 
     return (
 
-        <div key={`comic-${id}`} className={style.card}>
+        <div  className={style.card}>
             <img src={thumb} alt="" />
             <p>{series}</p>
         </div>)

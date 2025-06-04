@@ -5,6 +5,7 @@ import AppMain from './components/mainComponents/Appmain.jsx'
 import BlueBanner from './components/mainComponents/bluebanner.jsx'
 import Footer from './components/footerComponents/footer.jsx'
 import FooterBanner from './components/footerComponents/footerbanner.jsx'
+import comics from "./data/comics";
 
 
 
@@ -17,7 +18,7 @@ function App() {
     <>
       <Header />
       <HeroBanner />
-      <AppMain />
+      <AppMain comics={comics} />
       <BlueBanner />
       <Footer />
       <FooterBanner />
