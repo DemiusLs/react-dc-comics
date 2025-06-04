@@ -1,11 +1,13 @@
-import { useState } from 'react'
-import './Index.css'
-import Header from './components/header.jsx'
-import HeroBanner from './components/herobanner.jsx'
-import Main from './components/main.jsx'
-import BlueBanner from './components/bluebanner.jsx'
-import Footer from './components/footer.jsx'
-import FooterBanner from './components/footerbanner.jsx'
+
+import Header from './components/headerComponents/header.jsx'
+import HeroBanner from './components/headerComponents/herobanner.jsx'
+import AppMain from './components/mainComponents/Appmain.jsx'
+import BlueBanner from './components/mainComponents/bluebanner.jsx'
+import Footer from './components/footerComponents/footer.jsx'
+import FooterBanner from './components/footerComponents/footerbanner.jsx'
+
+
+
 
 
 function App() {
@@ -14,11 +16,12 @@ function App() {
   return (
     <>
       <Header />
-      <HeroBanner/>
-      <Main />
+      <HeroBanner />
+      <AppMain />
       <BlueBanner />
       <Footer />
       <FooterBanner />
+
 
     </>
   )

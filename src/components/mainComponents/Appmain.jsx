@@ -1,8 +1,9 @@
 import style from "./main.module.css"
-import comics from "../data/comics";
+import comics from "../../data/comics";
+import CardComponent from "./CardComponent";
 
 
-function Main() {
+function AppMain() {
 
 
     const data = [...comics]
@@ -16,11 +17,8 @@ function Main() {
         <main className={style.main}>
             <div className={`${style.inner}  container`}>
                 {data.map(comic => (
+                    <CardComponent id={comic.id} thumb={comic.thumb} series={comic.series} style={style} />
 
-                    <div key={`comic-${comic.id}`} className={style.card}>
-                        <img src={comic.thumb} alt="" />
-                        <p>{comic.series}</p>
-                    </div>
                 ))}
 
             </div>
@@ -30,4 +28,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default AppMain;

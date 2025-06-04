@@ -1,4 +1,5 @@
 import style from "./herobanner.module.css"
+
 const HeroBanner = () => {
 
     return (

@@ -1,6 +1,9 @@
 .footer {
 
-    background-image: url("../img/footer-bg.jpg");
+    background-image: url("/img/dc-logo-bg.png"), url("/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position:  right , center;
+    background-size: 30% , cover;
     
 
 }
@@ -47,10 +50,3 @@
 
 }
 
-.image {
-    
-    position: absolute;
-    right: 0;
-    top: -20%;
-    
-}
